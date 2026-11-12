@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0d0d0e">
+  <meta name="description" content="Portafolio de Juan José Vallejo. Desarrollo de software, APIs, automatización y Business Intelligence.">
+  <title>Juan José Vallejo · Portafolio</title>
+  <link rel="stylesheet" href="./styles.css?v=8">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header" id="inicio">
+    <div class="wrap header-row">
+      <a class="brand" href="#inicio" aria-label="Portafolio de Juan José Vallejo, inicio">
+        <span class="brand-mark" aria-hidden="true">JV</span>
+        <span class="brand-label">Portafolio</span>
+      </a>
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#formacion">Formación</a>
+        <a href="#sobre-mi">Sobre mí</a>
+      </nav>
+      <div class="header-actions">
+        <a class="button button-outline" href="https://www.linkedin.com/in/juan-jos%C3%A9-vallejo-morales-500a392b2/" target="_blank" rel="noopener noreferrer">LinkedIn <span class="arrow" aria-hidden="true">↗</span></a>
+        <a class="button button-primary" href="./assets/cv-juan-jose-vallejo.pdf" download="CV - Juan Jose Vallejo.pdf">Descargar CV <span class="arrow" aria-hidden="true">↓</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-row">
+        <div class="hero-copy">
+          <p class="hero-name">Juan José Vallejo</p>
+          <h1 id="hero-title"><span>Software,</span><span class="accent">datos y BI.</span></h1>
+          <p class="hero-description">Desarrollo aplicaciones, APIs y soluciones de inteligencia de negocios para la operación.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#proyectos">Ver proyectos <span class="arrow" aria-hidden="true">↘</span></a>
+            <a class="button button-outline" href="#sobre-mi">Sobre mí</a>
+          </div>
+          <dl class="hero-facts">
+            <div><dt>5</dt><dd>Proyectos</dd></div>
+            <div><dt>Desarrollo</dt><dd>Aplicaciones web e integraciones</dd></div>
+            <div><dt>Datos y BI</dt><dd>Automatización y análisis</dd></div>
+          </dl>
+        </div>
+        <figure class="hero-media">
+          <span class="orbit" aria-hidden="true"></span>
+          <img class="hero-image" src="./assets/retrato-juan-vallejo.png" alt="Retrato profesional de Juan José Vallejo" width="1024" height="1536" fetchpriority="high">
+          <span class="orbit-point" aria-hidden="true"></span>
+          <span class="art-cross" aria-hidden="true"></span>
+        </figure>
+      </div>
+    </section>
+
+    <section class="projects" id="proyectos" aria-labelledby="projects-title">
+      <div class="wrap">
+        <div class="section-heading">
+          <div>
+            <h2 id="projects-title">Proyectos</h2>
+            <p>Una selección de mi trabajo en Burger King Colombia.</p>
+          </div>
+          <div class="filters" role="group" aria-label="Filtrar proyectos">
+            <button class="filter" type="button" data-filter="all" aria-pressed="true">Todos</button>
+            <button class="filter" type="button" data-filter="software" aria-pressed="false">Desarrollo</button>
+            <button class="filter" type="button" data-filter="data" aria-pressed="false">Datos y BI</button>
+          </div>
+        </div>
+        <p class="sr-only" id="filter-status" aria-live="polite"></p>
+        <div class="project-grid">
+          <article class="project-card project-card--featured" data-area="software data">
+            <p class="project-type">Desarrollo web · Analítica operativa</p>
+            <h3>BK Analytics</h3>
+            <p class="summary">Portal interno donde los equipos de Burger King consultan indicadores de operación y solicitudes de soporte según sus permisos.</p>
+            <div class="project-details">
+              <h4>Mi aporte</h4>
+              <p>Diseñé la arquitectura y la interfaz del frontend, implementé el acceso por roles y desarrollé el módulo de análisis de tickets de GLPI con filtros y exportación CSV.</p>
+              <ul class="tags" aria-label="Tecnologías y herramientas">
+                <li>React</li><li>TypeScript</li><li>Vite</li><li>React Router</li><li>TanStack Query</li><li>Tailwind CSS</li><li>Recharts</li><li>Codex</li>
+              </ul>
+              <p class="project-scope">Participación desde mayo de 2026 · Contribución personal completada</p>
+            </div>
+            <div class="project-demo">
+              <div>
+                <h4>Demostración</h4>
+                <p>Pulso Operativo recrea los flujos principales con identidad propia y datos ficticios.</p>
+              </div>
+              <a class="button button-primary demo-link" href="https://jvallejomorales.github.io/bk-analytics-demo/?v=e3fab23" target="_blank" rel="noopener noreferrer" aria-label="Abrir demo de BK Analytics (nueva pestaña)">Abrir demo <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card" data-area="software data">
+            <p class="project-type">Ingeniería de datos · Soporte</p>
+            <h3>BK GLPI DWH</h3>
+            <p class="summary">Almacén de datos que reúne los tickets de GLPI, el sistema donde se registran las solicitudes e incidentes de soporte.</p>
+            <div class="project-details">
+              <h4>Mi aporte</h4>
+              <p>Desarrollé la extracción incremental desde GLPI, la carga en SQL Server, las vistas analíticas y la API de consulta que alimenta el módulo de soporte de BK Analytics.</p>
+              <ul class="tags" aria-label="Tecnologías y herramientas">
+                <li>Python</li><li>FastAPI</li><li>SQL Server</li><li>GLPI</li><li>API REST</li><li>Codex</li>
+              </ul>
+            </div>
+            <div class="project-demo">
+              <div>
+                <h4>Demostración</h4>
+                <p>Traza de Soporte recrea la carga, la validación y la consulta de solicitudes con identidad propia y datos ficticios.</p>
+              </div>
+              <a class="button button-primary demo-link" href="https://jvallejomorales.github.io/bk-glpi-dwh-demo/" target="_blank" rel="noopener noreferrer" aria-label="Abrir demo de BK GLPI DWH (nueva pestaña)">Abrir demo <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card" data-area="data">
+            <p class="project-type">Business Intelligence · Reportes</p>
+            <h3>Daily Report BI</h3>
+            <p class="summary">Informe diario en Power BI que el área de Inteligencia de Negocios comparte con la dirección para revisar la operación.</p>
+            <div class="project-details">
+              <h4>Mi aporte</h4>
+              <p>Diseñé las vistas y visualizaciones del reporte que el área de Inteligencia de Negocios comparte a diario con los directivos.</p>
+              <ul class="tags" aria-label="Tecnologías y herramientas"><li>Power BI</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card" data-area="software">
+            <p class="project-type">Automatización · Validación</p>
+            <h3>Xenial Product Price</h3>
+            <p class="summary">Herramienta para preparar y comprobar cambios de precios en Xenial por producto, restaurante y canal de venta a partir de archivos Excel.</p>
+            <div class="project-details">
+              <h4>Mi aporte</h4>
+              <p>Implementé la validación de archivos Excel, la simulación de cambios y la verificación posterior mediante la API de Xenial. Probé un cambio y su restauración en laboratorio.</p>
+              <ul class="tags" aria-label="Tecnologías y herramientas">
+                <li>Python</li><li>Excel</li><li>API REST de Xenial</li><li>Codex</li>
+              </ul>
+            </div>
+            <div class="project-demo">
+              <div>
+                <h4>Demostración</h4>
+                <p>Mesa de Precios recrea la consulta, la simulación y la restauración con identidad propia y un catálogo ficticio.</p>
+              </div>
+              <a class="button button-primary demo-link" href="https://jvallejomorales.github.io/xenial-product-price-demo/" target="_blank" rel="noopener noreferrer" aria-label="Abrir demo de Xenial Product Price (nueva pestaña)">Abrir demo <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card" data-area="data">
+            <p class="project-type">Integración de datos · Analítica digital</p>
+            <h3>Analítica social</h3>
+            <p class="summary">Aplicación local que reúne publicaciones y métricas de TikTok e Instagram para revisar el rendimiento por plataforma y fecha.</p>
+            <div class="project-details">
+              <h4>Mi aporte</h4>
+              <p>Desarrollé la aplicación con Python y SQLite. Integré APIs oficiales e importé reportes nativos con controles de fechas, duplicados y totales. Concilié los archivos con la base de datos y las vistas.</p>
+              <ul class="tags" aria-label="Tecnologías y herramientas">
+                <li>Python</li><li>SQLite</li><li>APIs REST</li><li>Codex</li>
+              </ul>
+            </div>
+            <div class="project-demo">
+              <div>
+                <h4>Demostración</h4>
+                <p>Radar Social recrea el seguimiento mensual y los gráficos de audiencia, publicaciones e historias con datos ficticios.</p>
+              </div>
+              <a class="button button-primary demo-link" href="https://jvallejomorales.github.io/bk-social-analytics-demo/" target="_blank" rel="noopener noreferrer" aria-label="Abrir demo de Analítica social (nueva pestaña)">Abrir demo <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience wrap" id="experiencia" aria-labelledby="experience-title">
+      <div class="section-heading">
+        <h2 id="experience-title">Experiencia</h2>
+      </div>
+      <div class="experience-panel">
+        <article class="experience-entry" aria-labelledby="experience-bk-title">
+          <img class="experience-mark experience-logo" src="./assets/burger-king-logo.webp" alt="" width="135" height="150" loading="lazy">
+          <div>
+            <h3 id="experience-bk-title">Burger King Colombia</h3>
+            <p class="experience-meta">Medellín, Antioquia, Colombia · En remoto</p>
+          </div>
+          <ol class="experience-roles" role="list">
+            <li class="experience-role">
+              <div class="experience-role-heading">
+                <h4>Analista de Inteligencia de Negocios</h4>
+                <span class="experience-current">Actualidad</span>
+              </div>
+              <p class="experience-type">Jornada completa</p>
+              <p class="experience-meta">Desde <time datetime="2026-11">nov. de 2026</time></p>
+            </li>
+            <li class="experience-role">
+              <h4>Practicante de Inteligencia de Negocios</h4>
+              <p class="experience-type">Contrato de prácticas</p>
+              <p class="experience-meta"><time datetime="2025-11">nov. de 2025</time> – <time datetime="2026-11">nov. de 2026</time></p>
+              <ul class="experience-tasks">
+                <li>
+                  Diseñé la arquitectura y la interfaz de BK Analytics, el portal interno donde los equipos consultan indicadores de operación y solicitudes de soporte. Implementé el acceso por roles y el módulo para filtrar tickets y exportarlos en CSV.
+                </li>
+                <li>
+                  Desarrollé BK GLPI DWH, un almacén de datos que organiza las solicitudes e incidentes registrados en GLPI, el sistema de soporte. Implementé la extracción incremental y la carga en SQL Server, las vistas de análisis y la API de consulta con Python y FastAPI.
+                </li>
+                <li>
+                  Desarrollé y validé un piloto de solo lectura para consultar indicadores comerciales autorizados desde ChatGPT mediante MCP (Model Context Protocol). Integré APIs privadas con autenticación OAuth con PKCE, consentimiento y auditoría.
+                </li>
+                <li>
+                  Diseñé las vistas y visualizaciones de Daily Report BI, el informe diario en Power BI que el área de Inteligencia de Negocios comparte con la dirección para revisar los indicadores de operación.
+                </li>
+                <li>
+                  Implementé la validación de archivos Excel, la simulación, la bitácora y la verificación posterior en Xenial Product Price, una herramienta para preparar cambios de precios por producto, restaurante y canal de venta. Probé un cambio y su restauración en laboratorio.
+                </li>
+                <li>
+                  Construí una aplicación local de analítica social con Python y SQLite para revisar publicaciones y métricas de TikTok e Instagram. Integré las APIs oficiales, importé reportes nativos y concilié los archivos con la base de datos y las visualizaciones.
+                </li>
+              </ul>
+              <ul class="tags" aria-label="Aptitudes de la práctica">
+                <li>Python</li><li>Microsoft SQL Server</li><li>React</li><li>TypeScript</li><li>FastAPI</li><li>Power BI</li><li>Excel</li><li>SQLite</li><li>APIs REST</li>
+              </ul>
+            </li>
+          </ol>
+        </article>
+
+        <article class="experience-entry" aria-labelledby="experience-freelance-title">
+          <span class="experience-mark" aria-hidden="true">FE</span>
+          <div>
+            <h3 id="experience-freelance-title">Trainee Desarrollador Front End</h3>
+            <p class="experience-type">Freelancer · Autónomo</p>
+            <p class="experience-meta"><time datetime="2025-08">ago. de 2025</time> – <time datetime="2025-09">sept. de 2025</time></p>
+            <p class="experience-meta">Sabaneta, Antioquia, Colombia · En remoto</p>
+            <ul class="experience-tasks">
+              <li>Desarrollé vistas de preguntas con opción múltiple, con botones interactivos y validación de respuestas.</li>
+              <li>Diseñé y construí la vista de un rompecabezas con piezas que se pueden arrastrar y soltar.</li>
+              <li>Optimicé la interfaz gráfica para mejorar la usabilidad y la experiencia de usuario.</li>
+            </ul>
+            <ul class="tags" aria-label="Aptitudes de la experiencia freelance">
+              <li>Desarrollo de software</li><li>Desarrollo front end</li><li>CSS</li><li>React Native</li><li>JavaScript</li><li>React.js</li><li>Expo</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="formation wrap" id="formacion" aria-labelledby="formation-title">
+      <div class="section-heading">
+        <h2 id="formation-title">Formación</h2>
+      </div>
+      <div class="experience-panel">
+        <article class="experience-entry" aria-labelledby="formation-unisabaneta">
+          <span class="experience-mark" aria-hidden="true">US</span>
+          <div>
+            <h3 id="formation-unisabaneta">Ingeniería Informática</h3>
+            <p class="experience-type">Unisabaneta</p>
+            <p class="experience-meta">Graduado</p>
+          </div>
+        </article>
+        <article class="experience-entry" aria-labelledby="formation-henry">
+          <span class="experience-mark" aria-hidden="true">H</span>
+          <div>
+            <h3 id="formation-henry">Full Stack Developer</h3>
+            <p class="experience-type">Henry Bootcamp</p>
+            <p class="experience-meta"><time datetime="2025-03">mar. de 2025</time> – <time datetime="2025-08">ago. de 2025</time></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="profile wrap" id="sobre-mi" aria-labelledby="profile-title">
+      <div class="profile-panel">
+        <div>
+          <h2 id="profile-title">Sobre mí</h2>
+          <p class="profile-intro">Ingeniero informático · Colombia</p>
+        </div>
+        <div class="profile-copy">
+          <p>Ingeniero informático con más de un año de experiencia laboral en desarrollo de aplicaciones web, APIs, automatización y soluciones de datos.</p>
+          <p>Trabajo en el equipo de Inteligencia de Negocios de Burger King, donde desarrollo herramientas internas e integro datos para operaciones y dirección.</p>
+          <div class="profile-actions">
+            <a class="button button-primary" href="./assets/cv-juan-jose-vallejo.pdf" download="CV - Juan Jose Vallejo.pdf">Descargar CV <span class="arrow" aria-hidden="true">↓</span></a>
+            <a class="button button-outline" href="https://www.linkedin.com/in/juan-jos%C3%A9-vallejo-morales-500a392b2/" target="_blank" rel="noopener noreferrer">Mi perfil en LinkedIn <span class="arrow" aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-row">
+      <p>Juan José Vallejo · Portafolio profesional</p>
+      <a href="#inicio">Volver arriba <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+
+  <script src="./portfolio.js?v=2" defer></script>
+</body>
+</html>
